@@ -6,9 +6,15 @@
 918 -> 1
 */
 Console.WriteLine("Введите число: ");
-int Number = Convert.ToInt32(Console.ReadLine());
 
+int Number = Convert.ToInt32(Console.ReadLine());
+int Metod(int Number)
+{
 int first = Number / 10;
 int second = first % 10;
+return second;
+}
 
-Console.Write($"Вторая цифра: {second}");
+int result = Metod(Number);
+
+Console.Write(result);
